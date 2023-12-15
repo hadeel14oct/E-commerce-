@@ -1,0 +1,174 @@
+body {
+ 	background-color: #e9ecef;
+ 	font-size: 16px;
+ }
+ .login{
+ 	width:300px;
+ 	margin:100px auto;
+ }
+ .login input {
+ 	margin-bottom: 10px ;
+ }
+ .login .form-control {
+ 	background-color: #fff;
+ }
+ .login .btn{
+ 	background-color:red ;
+ }
+ .h {
+ 	animation-name: h;
+ 	  animation-duration: 4s;
+ 	  position: relative;
+ 	  animation-iteration-count: infinite;
+ 	  animation-timing-function: ease-in;
+ }
+@keyframes h {
+ 
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+.navabar {
+	background-color: #2c3e50 ;
+}
+.brand {
+	color : #9b59b6;
+}
+/* if 2 attr from boot and you  then you must change it from inspect not like this */
+.nav >li>a{
+	padding :15px 12px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 20px;}
+    .nav-link:focus, .nav-link:hover, .dropdown-menu  {
+   
+    background-color: #9b59b6;
+    color: black;
+}
+.dropdown-menu ,.dropdown-item {
+	border: none;
+	padding-left: 10px;
+}
+ .dropdown-menu{
+box-shadow: 0 6px 12px black ; /* new attr */}
+.dropdown {
+    
+    right: -200px;
+}
+h1 {
+  font-size: 55px;
+  margin :40px 0;
+  font-weight:bold;
+  color : black;
+}
+.da { /* on inspect edited */
+  position: relative;
+}
+.asterisk {
+top:10%;
+  right: 0px;
+    font-size: 30px;
+    position: absolute;
+    color:red;
+    } 
+    .show-pas{
+    position: absolute;
+top:10%;
+  right:-30px;
+
+
+    }
+     .main-table td{
+      background-color: rgba(0,0,0,0.2) ;
+      vertical-align: middle ;
+
+     }
+    .main-table tr:first-child td {
+      background-color: black ;
+      color : #fff;
+
+    }
+    .btn {
+      padding: 3px 10px;
+    }
+    .fa {
+position: relative;
+    top: 2px;}
+    .table {
+          box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+
+    }
+    @keyframes button-push {
+  50% {
+transform: scale(.8);
+  }
+  100% {
+    transform: scale(1);
+
+  }
+}
+.btn:hover {
+  animation: button-push .3s linear 1;
+}
+a:hover{
+color : hsl(43 , 100% , 68%);
+}
+.home-stats .stat {
+  background-color: #EEE;
+  border: 1px solid #CCC ;
+  padding: 20px ;
+  font-size: 15px;
+}
+.home-stats .stat span {
+  display :block;
+  font-size: 50px;
+}
+.latest {
+  margin-top: 40 px; 
+}
+
+ .home-stats .st-members {
+  background-color: #dec3c3 ;
+
+ }
+  .home-stats .st-pending {
+    background-color: #e7d3d3;
+  }
+   .home-stats .st-items{
+    background-color: #f0e4e4 ;
+   }
+    .home-stats .st-comments{
+      background-color:  #f9f4f4 ;
+    }
+    .latest {
+      margin-top: 30px ;
+    }
+     .home-stats .stat {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+ .home-stats .stat::before {
+  content: attr(data);
+  position: absolute;
+  background-color: rgb(51 209 204 / 76%);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  transform: translateX(calc(-100% - 5px));
+
+}
+ .home-stats .stat:hover::before {
+  transform: translateX(-55%);
+}
+a {
+  text-decoration: none;
+  color: initial;
+}
